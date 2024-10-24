@@ -16,9 +16,9 @@ pipeline {
 
         stage("Deploy") {
             steps {
-                sh "sudo mkdir -p /var/www/angulartest.mmworkspace.com"
-                sh "sudo rm -rf /var/www/angulartest.mmworkspace.com/*" // Clear previous contents
-                sh "sudo cp -r ${WORKSPACE}/dist/my-app/* /var/www/angulartest.mmworkspace.com/"
+                sh "sudo mkdir -p /var/www/angular.mmworkspace.com"
+                sh "sudo rm -rf /var/www/angular.mmworkspace.com/*"
+                sh "sudo cp -r ${WORKSPACE}/dist/my-app/* /var/www/angular.mmworkspace.com/"
                 
             }
         }
